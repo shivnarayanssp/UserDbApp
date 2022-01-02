@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UserDbWeb</title>
+</head>
+<body>
+	<h1>Welcome to my page</h1>
+	<form action="jd" method="post">
+		<label>Enter Email: </label>
+		<input type="email" name="user_email" required/>
+		<button type="submit">Search</button>
+	</form>
+	<hr/>
+	<h2>User Login:</h2>
+	<form action="login" method="post">
+		<label>Enter Email: </label>
+		<input type="email" name="user_email" required/><br/><br/>
+		<label>Enter Password: </label>
+		<input type="password" name="password" required/><br/><br/> 
+		<button type="submit">Submit</button>
+	</form>
+	<hr/>
+	<h2>User Registration:</h2>
+	<form action="jd2" method="post">
+		<label>Enter Email: </label>
+		<input type="email" name="user_email" required/><br/><br/>
+		<label>Enter Name: </label>
+		<input type="text" name="user_name" pattern="[a-z A-Z]+" required/><br/><br/>
+		<label>Enter Phone: </label>
+		<input type="tel" name="phone" minlength='10' maxlength="10"  required/><br/><br/>
+		<label>Enter Age: </label>
+		<input type="number" name="age" max="120" min="1" required/><br/><br/>
+		<label>Enter Password: </label>
+		<input type="password" name="password" required/><br/><br/>
+		<button type="submit">Register</button>
+	</form>
+</body>
+</html>
